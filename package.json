@@ -1,0 +1,39 @@
+{
+  "name": "claude-commit",
+  "displayName": "Claude Commit",
+  "description": "Generate conventional commit messages using the Claude CLI",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "claude-commit.generate",
+        "title": "Generate Commit Message (Claude)",
+        "icon": "$(sparkle)"
+      }
+    ],
+    "menus": {
+      "scm/title": [
+        {
+          "command": "claude-commit.generate",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Claude Commit",
+      "properties": {
+        "claude-commit.commitFormat": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "Custom commit message format instructions. If empty, defaults to conventional commits.\n\n**Example:**\n```\nAlways prefix with the Jira ticket from the branch name. Format: TICKET-123: short description.\n```"
+        }
+      }
+    }
+  },
+  "extensionDependencies": ["vscode.git"]
+}
