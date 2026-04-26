@@ -2,7 +2,7 @@
   "name": "vscode-claude-commit",
   "displayName": "VSCode Claude Commit",
   "description": "Generate conventional commit messages using the Claude CLI",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "local",
   "engines": {
     "vscode": "^1.85.0"
