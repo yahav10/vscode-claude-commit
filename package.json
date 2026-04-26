@@ -2,11 +2,17 @@
   "name": "claude-commit",
   "displayName": "Claude Commit",
   "description": "Generate conventional commit messages using the Claude CLI",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "local",
-  "engines": { "vscode": "^1.85.0" },
-  "categories": ["Other"],
-  "activationEvents": ["onStartupFinished"],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./src/extension.js",
   "contributes": {
     "commands": [
@@ -35,5 +41,7 @@
       }
     }
   },
-  "extensionDependencies": ["vscode.git"]
+  "extensionDependencies": [
+    "vscode.git"
+  ]
 }
