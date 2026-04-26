@@ -1,6 +1,6 @@
 {
-  "name": "claude-commit",
-  "displayName": "Claude Commit",
+  "name": "vscode-claude-commit",
+  "displayName": "VSCode Claude Commit",
   "description": "Generate conventional commit messages using the Claude CLI",
   "version": "0.0.2",
   "publisher": "local",
@@ -43,5 +43,26 @@
   },
   "extensionDependencies": [
     "vscode.git"
-  ]
+  ],
+  "bin": {
+    "vscode-claude-commit": "./bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "install.sh"
+  ],
+  "keywords": [
+    "vscode",
+    "git",
+    "commit",
+    "claude",
+    "ai"
+  ],
+  "author": "yahav10",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yahav10/vscode-claude-commit.git"
+  }
 }
